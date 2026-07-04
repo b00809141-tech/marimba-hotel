@@ -44,7 +44,7 @@ export default function Gallery() {
           backgroundImage: 'url(/images/gallery-hero.jpg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          background: 'linear-gradient(180deg, #8A8078, #6B5D4F)',
+          backgroundColor: '#8A8078',
         }}/>
         <div style={{ position: 'relative' }}>
           <p style={{ fontFamily: "'Jost', sans-serif", fontSize: '11px', letterSpacing: '0.16em', textTransform: 'uppercase', color: '#C8882A', marginBottom: '12px' }}>Damour · Lebanese Coast</p>
@@ -75,7 +75,7 @@ export default function Gallery() {
               backgroundImage: `url(${photo.src})`,
               backgroundSize: 'cover',
               backgroundPosition: 'center',
-              background: '#E4D3BE',
+              backgroundColor: '#E4D3BE',
             }}/>
           ))}
         </div>

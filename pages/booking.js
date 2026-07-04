@@ -90,7 +90,7 @@ export default function Booking() {
               <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '36px' }}>
                 {rooms.map(r => (
                   <div key={r.id} onClick={() => { setSelectedRoom(r.id); if (guests > (rooms.find(x => x.id === r.id) || {}).maxGuests) setGuests(r.maxGuests) }} style={{ padding: '18px 20px', border: selectedRoom === r.id ? '2px solid #C8882A' : '1px solid #C5D4E8', background: selectedRoom === r.id ? '#EEF3FA' : '#F4F7FC', cursor: 'pointer', display: 'flex', gap: '16px', alignItems: 'center' }}>
-                    <div style={{ width: '84px', height: '64px', flexShrink: 0, backgroundImage: `url(${r.image})`, backgroundSize: 'cover', backgroundPosition: 'center', background: '#E4D3BE' }}/>
+                    <div style={{ width: '84px', height: '64px', flexShrink: 0, backgroundImage: `url(${r.image})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundColor: '#E4D3BE' }}/>
                     <div style={{ flex: 1, display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '12px' }}>
                       <div>
                         <p style={{ fontFamily: 'Georgia, serif', fontSize: '18px', fontWeight: '500', color: '#0A1F3D', marginBottom: '3px' }}>{r.name}</p>
@@ -129,7 +129,7 @@ export default function Booking() {
               <p style={{ fontFamily: 'Georgia, serif', fontSize: '13px', fontStyle: 'italic', color: '#9A7A5A', textAlign: 'center', marginTop: '12px' }}>Free cancellation up to 48 hours before arrival.</p>
             </div>
             <div style={{ background: '#0A1F3D', padding: '36px' }}>
-              <div style={{ height: '160px', marginBottom: '24px', backgroundImage: `url(${room.image})`, backgroundSize: 'cover', backgroundPosition: 'center', background: '#E4D3BE' }}/>
+              <div style={{ height: '160px', marginBottom: '24px', backgroundImage: `url(${room.image})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundColor: '#E4D3BE' }}/>
               <p style={{ fontFamily: 'sans-serif', fontSize: '10px', letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C8882A', marginBottom: '20px' }}>Your reservation</p>
               <p style={{ fontFamily: 'Georgia, serif', fontSize: '20px', fontWeight: '500', color: '#F4F7FC', marginBottom: '4px' }}>{room.name}{connectedRoom && room.allowConnecting ? ' + connected room' : ''}</p>
               <p style={{ fontFamily: 'sans-serif', fontSize: '12px', color: '#9A7A5A', fontWeight: '300', marginBottom: '28px' }}>Marimba Hotel · Damour, Lebanon</p>

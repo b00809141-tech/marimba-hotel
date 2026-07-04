@@ -65,7 +65,7 @@ export default function Home() {
               backgroundImage: 'url(/images/light-section.jpg)',
               backgroundSize: 'cover',
               backgroundPosition: 'center',
-              background: '#E4D3BE',
+              backgroundColor: '#E4D3BE',
             }}/>
             <div style={{
               position: 'absolute', bottom: '24px', left: '24px',
@@ -87,7 +87,7 @@ export default function Home() {
       {/* EVERY MORNING */}
       <section style={{ padding: '120px 48px', background: '#FAF7F2' }}>
         <div style={{ maxWidth: '1300px', margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1.3fr 1fr', gap: '40px', alignItems: 'center' }}>
-          <div style={{ height: '440px', backgroundImage: 'url(/images/morning-left.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', background: '#EFE3D1' }}/>
+          <div style={{ height: '440px', backgroundImage: 'url(/images/morning-left.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundColor: '#EFE3D1' }}/>
           <div>
             <p style={{ fontFamily: "'Jost', sans-serif", fontSize: '10px', letterSpacing: '0.16em', textTransform: 'uppercase', color: '#C8882A', marginBottom: '24px', textAlign: 'center' }}>Every morning</p>
             <p style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: 'italic', fontSize: '19px', color: '#5C3D1A', lineHeight: '1.9', marginBottom: '20px', textAlign: 'center' }}>The table is already laid. Nobody announced it — it's just there, the way things appear at a house where someone was thinking about you before you arrived.</p>
@@ -95,7 +95,7 @@ export default function Home() {
             <p style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: 'italic', fontSize: '19px', color: '#5C3D1A', lineHeight: '1.9', marginBottom: '20px', textAlign: 'center' }}>A child runs past barefoot on the warm terracotta, chasing something or no one.</p>
             <p style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: 'italic', fontSize: '20px', color: '#1A0D00', fontWeight: '500', textAlign: 'center' }}>You have no plans. That is the plan.</p>
           </div>
-          <div style={{ height: '440px', backgroundImage: 'url(/images/morning-right.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', background: '#EFE3D1' }}/>
+          <div style={{ height: '440px', backgroundImage: 'url(/images/morning-right.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundColor: '#EFE3D1' }}/>
         </div>
       </section>
 
@@ -124,7 +124,7 @@ export default function Home() {
               backgroundImage: 'url(/images/cinema-night.jpg)',
               backgroundSize: 'cover',
               backgroundPosition: 'center',
-              background: '#3A2A18',
+              backgroundColor: '#3A2A18',
             }}/>
             <div style={{
               position: 'absolute', bottom: 0, left: 0, right: 0,
@@ -142,7 +142,7 @@ export default function Home() {
               backgroundImage: 'url(/images/fire-pit.jpg)',
               backgroundSize: 'cover',
               backgroundPosition: 'center',
-              background: '#3A2A18',
+              backgroundColor: '#3A2A18',
             }}/>
             <div style={{
               position: 'absolute', bottom: 0, left: 0, right: 0,

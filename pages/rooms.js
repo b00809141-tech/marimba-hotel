@@ -70,7 +70,7 @@ export default function Rooms() {
           backgroundImage: 'url(/images/rooms-hero.jpg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          background: 'linear-gradient(180deg, #C9BFB4, #6B5D4F)',
+          backgroundColor: '#8A8078',
         }}/>
         <div style={{ position: 'relative', maxWidth: '1300px', margin: '0 auto', width: '100%' }}>
           <p style={{ fontFamily: "'Jost', sans-serif", fontSize: '11px', letterSpacing: '0.16em', textTransform: 'uppercase', color: '#C8882A', marginBottom: '12px' }}>Marimba Hotel</p>
@@ -110,7 +110,7 @@ export default function Rooms() {
                 backgroundImage: `url(${room.image})`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
-                background: '#E4D3BE',
+                backgroundColor: '#E4D3BE',
               }}/>
               <div style={{
                 order: i % 2 === 1 ? 1 : 2,
