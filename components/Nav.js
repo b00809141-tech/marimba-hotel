@@ -20,6 +20,7 @@ export default function Nav({ transparent = true }) {
       </Link>
       <div style={{ display: 'flex', alignItems: 'center', gap: '40px' }}>
         <Link href="/rooms" style={{ fontFamily: "'Jost', sans-serif", fontSize: '12px', letterSpacing: '0.12em', textTransform: 'uppercase', color: linkColor, textDecoration: 'none' }}>Your Room</Link>
+        <Link href="/gallery" style={{ fontFamily: "'Jost', sans-serif", fontSize: '12px', letterSpacing: '0.12em', textTransform: 'uppercase', color: linkColor, textDecoration: 'none' }}>Gallery</Link>
         <Link href="/about" style={{ fontFamily: "'Jost', sans-serif", fontSize: '12px', letterSpacing: '0.12em', textTransform: 'uppercase', color: linkColor, textDecoration: 'none' }}>About Us</Link>
         <Link href="/contact" style={{ fontFamily: "'Jost', sans-serif", fontSize: '12px', letterSpacing: '0.12em', textTransform: 'uppercase', color: linkColor, textDecoration: 'none' }}>Contact</Link>
         <Link href="/booking" style={{ fontFamily: "'Jost', sans-serif", fontSize: '12px', letterSpacing: '0.12em', textTransform: 'uppercase', fontWeight: '600', color: '#1A0D00', background: '#C8882A', padding: '14px 24px', textDecoration: 'none' }}>Reserve Your Stay</Link>
