@@ -84,16 +84,16 @@ export default function Home() {
         </div>
       </section>
 
-      {/* EVERY MORNING */}
+      {/* POOLSIDE F&B */}
       <section style={{ padding: '120px 48px', background: '#FAF7F2' }}>
         <div style={{ maxWidth: '1300px', margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1.3fr 1fr', gap: '40px', alignItems: 'center' }}>
           <div style={{ height: '440px', backgroundImage: 'url(/images/morning-left.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundColor: '#EFE3D1' }}/>
           <div>
-            <p style={{ fontFamily: "'Jost', sans-serif", fontSize: '10px', letterSpacing: '0.16em', textTransform: 'uppercase', color: '#C8882A', marginBottom: '24px', textAlign: 'center' }}>Every morning</p>
-            <p style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: 'italic', fontSize: '19px', color: '#5C3D1A', lineHeight: '1.9', marginBottom: '20px', textAlign: 'center' }}>The table is already laid. Nobody announced it — it's just there, the way things appear at a house where someone was thinking about you before you arrived.</p>
-            <p style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: 'italic', fontSize: '19px', color: '#5C3D1A', lineHeight: '1.9', marginBottom: '20px', textAlign: 'center' }}>Labneh. Za'atar. Bread pulled apart with hands. Someone pours you coffee without being asked and carries on talking.</p>
-            <p style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: 'italic', fontSize: '19px', color: '#5C3D1A', lineHeight: '1.9', marginBottom: '20px', textAlign: 'center' }}>A child runs past barefoot on the warm terracotta, chasing something or no one.</p>
-            <p style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: 'italic', fontSize: '20px', color: '#1A0D00', fontWeight: '500', textAlign: 'center' }}>You have no plans. That is the plan.</p>
+            <p style={{ fontFamily: "'Jost', sans-serif", fontSize: '10px', letterSpacing: '0.16em', textTransform: 'uppercase', color: '#C8882A', marginBottom: '24px', textAlign: 'center' }}>Poolside</p>
+            <p style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: 'italic', fontSize: '19px', color: '#5C3D1A', lineHeight: '1.9', marginBottom: '20px', textAlign: 'center' }}>The tray arrives before you've asked for it. Something cold, something bright, garnished like it's the only thing being made right now.</p>
+            <p style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: 'italic', fontSize: '19px', color: '#5C3D1A', lineHeight: '1.9', marginBottom: '20px', textAlign: 'center' }}>A salad built for sharing. A sandwich that needs both hands. Fries that disappear before they're offered around twice.</p>
+            <p style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: 'italic', fontSize: '19px', color: '#5C3D1A', lineHeight: '1.9', marginBottom: '20px', textAlign: 'center' }}>The pool is right there. So is the next round.</p>
+            <p style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: 'italic', fontSize: '20px', color: '#1A0D00', fontWeight: '500', textAlign: 'center' }}>You didn't plan lunch. Lunch found you.</p>
           </div>
           <div style={{ height: '440px', backgroundImage: 'url(/images/morning-right.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundColor: '#EFE3D1' }}/>
         </div>
