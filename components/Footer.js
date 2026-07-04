@@ -13,7 +13,6 @@ export default function Footer() {
           <p style={{ fontFamily: "'Jost', sans-serif", fontSize: '10px', letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C8882A', marginBottom: '20px' }}>Navigation</p>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
             <Link href="/rooms" style={{ fontFamily: "'Jost', sans-serif", fontSize: '14px', color: '#D8C4A8', textDecoration: 'none' }}>Your room</Link>
-            <Link href="/gallery" style={{ fontFamily: "'Jost', sans-serif", fontSize: '14px', color: '#D8C4A8', textDecoration: 'none' }}>Gallery</Link>
             <Link href="/about" style={{ fontFamily: "'Jost', sans-serif", fontSize: '14px', color: '#D8C4A8', textDecoration: 'none' }}>About us</Link>
             <Link href="/contact" style={{ fontFamily: "'Jost', sans-serif", fontSize: '14px', color: '#D8C4A8', textDecoration: 'none' }}>Contact & Socials</Link>
             <Link href="/booking" style={{ fontFamily: "'Jost', sans-serif", fontSize: '14px', color: '#D8C4A8', textDecoration: 'none' }}>Reserve your stay</Link>
