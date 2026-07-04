@@ -57,8 +57,8 @@ export default function Home() {
       </section>
 
       {/* THE LIGHT HERE */}
-      <section style={{ padding: '120px 48px', background: '#FAF3EA' }}>
-        <div style={{ maxWidth: '1300px', margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '64px', alignItems: 'center' }}>
+      <section style={{ padding: 'clamp(60px, 10vw, 120px) clamp(20px, 6vw, 48px)', background: '#FAF3EA' }}>
+        <div className="light-grid" style={{ maxWidth: '1300px', margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '48px', alignItems: 'center' }}>
           <div style={{ position: 'relative', height: '520px', overflow: 'hidden' }}>
             <div style={{
               position: 'absolute', inset: 0,
@@ -85,8 +85,8 @@ export default function Home() {
       </section>
 
       {/* POOLSIDE F&B */}
-      <section style={{ padding: '120px 48px', background: '#FAF7F2' }}>
-        <div style={{ maxWidth: '1300px', margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1.3fr 1fr', gap: '40px', alignItems: 'center' }}>
+      <section style={{ padding: 'clamp(60px, 10vw, 120px) clamp(20px, 6vw, 48px)', background: '#FAF7F2' }}>
+        <div className="poolside-grid" style={{ maxWidth: '1300px', margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1.3fr 1fr', gap: '32px', alignItems: 'center' }}>
           <div style={{ height: '440px', backgroundImage: 'url(/images/morning-left.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundColor: '#EFE3D1' }}/>
           <div>
             <p style={{ fontFamily: "'Jost', sans-serif", fontSize: '10px', letterSpacing: '0.16em', textTransform: 'uppercase', color: '#C8882A', marginBottom: '24px', textAlign: 'center' }}>Poolside</p>
@@ -100,7 +100,7 @@ export default function Home() {
       </section>
 
       {/* EVENING SECTION */}
-      <section style={{ padding: '120px 48px', maxWidth: '1300px', margin: '0 auto' }}>
+      <section style={{ padding: 'clamp(60px, 10vw, 120px) clamp(20px, 6vw, 48px)', maxWidth: '1300px', margin: '0 auto' }}>
         <h2 style={{
           fontFamily: "'Cormorant Garamond', serif",
           fontSize: 'clamp(30px, 4vw, 50px)',
@@ -109,10 +109,10 @@ export default function Home() {
           lineHeight: '1.2',
           color: '#1A0D00',
           maxWidth: '700px',
-          marginBottom: '64px',
+          marginBottom: '48px',
         }}>This is what you were looking for<br/>when you left the city.<br/><em style={{ color: '#C8882A' }}>You just didn't have a name for it yet.</em></h2>
 
-        <div style={{
+        <div className="evening-grid" style={{
           display: 'grid',
           gridTemplateColumns: '1fr 1fr 1fr',
           gap: '32px',
@@ -192,17 +192,9 @@ export default function Home() {
 
       <style>{`
         @media (max-width: 900px) {
-          div[style*="grid-template-columns: 1fr 1fr"] {
+          .light-grid, .poolside-grid, .evening-grid {
             grid-template-columns: 1fr !important;
           }
-          div[style*="grid-template-columns: 1fr 1.3fr 1fr"] {
-            grid-template-columns: 1fr !important;
-          }
-          div[style*="grid-template-columns: 1fr 1fr 1fr"] {
-            grid-template-columns: 1fr !important;
-          }
-          div[style*="order: 1"] { order: 0 !important; }
-          div[style*="padding: 64px 56px"] { padding: 40px 24px !important; }
         }
       `}</style>
     </>

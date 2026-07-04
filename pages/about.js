@@ -39,7 +39,7 @@ export default function About() {
       </section>
 
       {/* INTRO STATEMENT */}
-      <section style={{ padding: '100px 48px 80px', background: '#FAF7F2', textAlign: 'center' }}>
+      <section style={{ padding: 'clamp(60px, 10vw, 100px) clamp(20px, 6vw, 48px) clamp(48px, 8vw, 80px)', background: '#FAF7F2', textAlign: 'center' }}>
         <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: 'italic', fontSize: 'clamp(28px, 4vw, 44px)', color: '#1A0D00', lineHeight: '1.3', maxWidth: '900px', margin: '0 auto' }}>
           We are not here because<br/>Lebanon needs another hotel.<br/><em style={{ color: '#C8882A' }}>We are here because it needs this.</em>
         </h2>
@@ -47,8 +47,8 @@ export default function About() {
       </section>
 
       {/* WHY WE EXIST / HOW WE DO IT */}
-      <section style={{ padding: '0 48px 100px', background: '#FAF7F2' }}>
-        <div style={{ maxWidth: '1300px', margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '80px' }}>
+      <section style={{ padding: '0 clamp(20px, 6vw, 48px) clamp(60px, 10vw, 100px)', background: '#FAF7F2' }}>
+        <div className="about-grid" style={{ maxWidth: '1300px', margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '56px' }}>
           <div>
             <p style={{ fontFamily: "'Jost', sans-serif", fontSize: '10px', letterSpacing: '0.16em', textTransform: 'uppercase', color: '#C8882A', marginBottom: '16px', paddingBottom: '16px', borderBottom: '1px solid rgba(200,136,42,0.3)' }}>Why we exist</p>
             <p style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: 'italic', fontSize: '18px', color: '#5C3D1A', lineHeight: '1.9', marginBottom: '20px' }}>We believe something is disappearing from Lebanese summer. Not the heat, not the food, not the coast. Something quieter than that.</p>
@@ -68,7 +68,7 @@ export default function About() {
       </section>
 
       {/* DARK QUOTE */}
-      <section style={{ background: '#1A0D00', padding: '100px 48px', textAlign: 'center' }}>
+      <section style={{ background: '#1A0D00', padding: 'clamp(60px, 10vw, 100px) clamp(20px, 6vw, 48px)', textAlign: 'center' }}>
         <p style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: 'italic', fontSize: 'clamp(24px, 3.5vw, 38px)', color: '#FAF7F2', lineHeight: '1.5', maxWidth: '900px', margin: '0 auto' }}>
           "We are not trying to be a better hotel.<br/>We are trying to be something older<br/>and more important than that."
         </p>
@@ -81,13 +81,13 @@ export default function About() {
       </section>
 
       {/* WHAT YOU'LL FIND */}
-      <section style={{ padding: '100px 48px', background: '#FAF7F2' }}>
+      <section style={{ padding: 'clamp(60px, 10vw, 100px) clamp(20px, 6vw, 48px)', background: '#FAF7F2' }}>
         <div style={{ maxWidth: '900px', margin: '0 auto' }}>
           <p style={{ fontFamily: "'Jost', sans-serif", fontSize: '10px', letterSpacing: '0.16em', textTransform: 'uppercase', color: '#C8882A', marginBottom: '24px' }}>What you'll find</p>
           <p style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: 'italic', fontSize: '19px', color: '#5C3D1A', lineHeight: '1.9', marginBottom: '24px' }}>Sixty rooms on the Damour highway, on a stretch of the Lebanese coast that still moves at its own pace. A curved pool surrounded by rattan parasols and linen loungers. Balconies draped in jasmine. Terracotta warm underfoot. The Mediterranean visible from the backyard every morning.</p>
           <p style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: 'italic', fontSize: '19px', color: '#5C3D1A', lineHeight: '1.9', marginBottom: '24px' }}>A fire pit. A long table. A cinema screen on Thursday evenings. A Lebanese breakfast on Sunday mornings that nobody announces and everyone finds.</p>
           <p style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: 'italic', fontSize: '20px', color: '#1A0D00', fontWeight: '500', marginBottom: '48px' }}>A backyard that, by the second morning, already feels like yours.</p>
-          <div style={{ borderLeft: '3px solid #C8882A', background: '#F3E9D8', padding: '40px 48px' }}>
+          <div style={{ borderLeft: '3px solid #C8882A', background: '#F3E9D8', padding: 'clamp(24px, 5vw, 40px) clamp(20px, 5vw, 48px)' }}>
             <p style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: 'italic', fontSize: '20px', color: '#1A0D00', lineHeight: '1.6' }}>"The backyard was always here.<br/>We just finally opened the gate."</p>
           </div>
         </div>
@@ -97,9 +97,8 @@ export default function About() {
 
       <style>{`
         @media (max-width: 900px) {
-          div[style*="grid-template-columns: 1fr 1fr"] {
+          .about-grid {
             grid-template-columns: 1fr !important;
-            gap: 48px !important;
           }
         }
       `}</style>

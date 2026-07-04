@@ -62,7 +62,7 @@ export default function Rooms() {
         marginTop: '0',
         display: 'flex',
         alignItems: 'flex-end',
-        padding: '0 48px 56px',
+        padding: '0 clamp(20px, 6vw, 48px) clamp(32px, 6vw, 56px)',
         overflow: 'hidden',
       }}>
         <video autoPlay muted loop playsInline poster="/images/rooms-hero.jpg" style={{
@@ -84,8 +84,8 @@ export default function Rooms() {
       </section>
 
       {/* INTRO */}
-      <section style={{ padding: '80px 48px', background: '#FAF7F2', borderBottom: '1px solid rgba(200,136,42,0.2)' }}>
-        <div style={{ maxWidth: '1300px', margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '64px' }}>
+      <section style={{ padding: 'clamp(48px, 8vw, 80px) clamp(20px, 6vw, 48px)', background: '#FAF7F2', borderBottom: '1px solid rgba(200,136,42,0.2)' }}>
+        <div className="intro-grid" style={{ maxWidth: '1300px', margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '48px' }}>
           <p style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: 'italic', fontSize: 'clamp(24px, 3vw, 34px)', color: '#1A0D00', lineHeight: '1.4' }}>The light comes in before you're ready for it. Warm, low, landing on the wall like it has nowhere else to be.</p>
           <div>
             <p style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: 'italic', fontSize: '18px', color: '#5C3D1A', lineHeight: '1.8', marginBottom: '16px' }}>Your room is where the day begins and where it quietly ends — everything in between happens outside.</p>
@@ -96,12 +96,12 @@ export default function Rooms() {
       </section>
 
       {/* CHOOSE YOUR ROOM */}
-      <section style={{ padding: '80px 48px 120px', background: '#FAF7F2' }}>
+      <section style={{ padding: 'clamp(48px, 8vw, 80px) clamp(20px, 6vw, 48px) clamp(60px, 10vw, 120px)', background: '#FAF7F2' }}>
         <div style={{ maxWidth: '1300px', margin: '0 auto' }}>
           <p style={{ fontFamily: "'Jost', sans-serif", fontSize: '10px', letterSpacing: '0.16em', textTransform: 'uppercase', color: '#C8882A', marginBottom: '16px', paddingBottom: '16px', borderBottom: '1px solid rgba(200,136,42,0.3)' }}>Choose your room</p>
 
           {rooms.map((room, i) => (
-            <div key={room.id} style={{
+            <div key={room.id} className="room-card-grid" style={{
               display: 'grid',
               gridTemplateColumns: '1fr 1fr',
               gap: '0',
@@ -109,7 +109,7 @@ export default function Rooms() {
               borderBottom: i < rooms.length - 1 ? '1px solid rgba(200,136,42,0.25)' : 'none',
               padding: '64px 0',
             }}>
-              <div style={{
+              <div className="room-card-media" style={{
                 order: i % 2 === 1 ? 2 : 1,
                 height: '420px',
                 backgroundImage: `url(${room.image})`,
@@ -117,7 +117,7 @@ export default function Rooms() {
                 backgroundPosition: 'center',
                 backgroundColor: '#E4D3BE',
               }}/>
-              <div style={{
+              <div className="room-card-content" style={{
                 order: i % 2 === 1 ? 1 : 2,
                 padding: '0 56px',
                 display: 'flex',
@@ -158,11 +158,18 @@ export default function Rooms() {
 
       <style>{`
         @media (max-width: 900px) {
-          div[style*="grid-template-columns: 1fr 1fr"] {
+          .intro-grid, .room-card-grid {
             grid-template-columns: 1fr !important;
           }
-          div[style*="order: 1"], div[style*="order: 2"] { order: 0 !important; }
-          div[style*="padding: 0 56px"] { padding: 40px 24px 0 !important; }
+          .room-card-media, .room-card-content {
+            order: 0 !important;
+          }
+          .room-card-content {
+            padding: 32px 24px 0 !important;
+          }
+          .room-card-media {
+            height: 280px !important;
+          }
         }
       `}</style>
     </>

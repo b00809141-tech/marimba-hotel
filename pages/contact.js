@@ -32,7 +32,7 @@ export default function Contact() {
       </Head>
       <Nav transparent={false} />
 
-      <div style={{ marginTop: '64px', display: 'grid', gridTemplateColumns: '1fr 1fr', minHeight: 'calc(100vh - 64px)' }}>
+      <div className="contact-grid" style={{ marginTop: '64px', display: 'grid', gridTemplateColumns: '1fr 1fr', minHeight: 'calc(100vh - 64px)' }}>
         {/* FIND US */}
         <div style={{ background: '#1A0D00', padding: 'clamp(48px, 6vw, 96px) clamp(32px, 5vw, 88px)' }}>
           <p style={{ fontFamily: "'Jost', sans-serif", fontSize: '10px', letterSpacing: '0.16em', textTransform: 'uppercase', color: '#C8882A', marginBottom: '24px' }}>Find us</p>
@@ -97,8 +97,9 @@ export default function Contact() {
 
       <style>{`
         @media (max-width: 900px) {
-          div[style*="grid-template-columns: 1fr 1fr"] {
+          .contact-grid {
             grid-template-columns: 1fr !important;
+            min-height: auto !important;
           }
         }
       `}</style>

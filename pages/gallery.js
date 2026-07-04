@@ -60,8 +60,8 @@ export default function Gallery() {
       </section>
 
       {/* GRID */}
-      <section style={{ padding: '40px 48px 120px', background: '#FAF7F2' }}>
-        <div style={{
+      <section style={{ padding: 'clamp(24px, 5vw, 40px) clamp(20px, 6vw, 48px) clamp(60px, 10vw, 120px)', background: '#FAF7F2' }}>
+        <div className="gallery-grid" style={{
           maxWidth: '1300px',
           margin: '0 auto',
           columnCount: 3,
@@ -85,12 +85,12 @@ export default function Gallery() {
 
       <style>{`
         @media (max-width: 900px) {
-          div[style*="column-count: 3"] {
+          .gallery-grid {
             column-count: 2 !important;
           }
         }
         @media (max-width: 560px) {
-          div[style*="column-count: 3"] {
+          .gallery-grid {
             column-count: 1 !important;
           }
         }
