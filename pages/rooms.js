@@ -9,31 +9,40 @@ const rooms = [
     name: 'Standard Room',
     price: '$100',
     tagline: 'The sea through the window. White walls. A bed that knows what it\'s for.',
-    description: 'Sea view. Double or twin beds. Air conditioning. Private bathroom. Balcony. WiFi. Daily housekeeping.',
+    description: 'Sea view. Double or twin beds. Air conditioning. Private bathroom. Balcony. WiFi. Daily housekeeping. Pool access. Access to Al Jisr resort. F&B available on site.',
     note: 'Rest here. Live out there.',
     image: '/images/standard-room.jpg',
-    features: ['Sea view', 'Double or twin beds', 'Private balcony', 'Air conditioning', 'Private bathroom', 'Daily housekeeping'],
+    features: ['Sea view', 'Double or twin beds', 'Balcony', 'Air conditioning', 'Private bathroom', 'Pool access', 'Access to Al Jisr resort', 'F&B available on site'],
   },
   {
     id: 'terrace',
     name: 'Room with Terrace Access',
-    price: '$149',
+    price: '$120',
     tagline: 'Your own corner of the backyard. Private garden terrace, direct pool access.',
-    description: 'Private garden terrace. Direct pool access. Double or twin beds. Air conditioning. Private bathroom. WiFi. Daily housekeeping.',
+    description: 'Private garden terrace. Direct pool access. Double or twin beds. Air conditioning. Private bathroom. WiFi. Daily housekeeping. Access to Al Jisr resort. F&B available on site.',
     note: 'The pool is steps away. The garden is yours.',
     image: '/images/terrace-room.jpg',
-    features: ['Private garden terrace', 'Direct pool access', 'Double or twin beds', 'Air conditioning', 'Private bathroom', 'Daily housekeeping'],
-    featured: true,
+    features: ['Private garden terrace', 'Direct pool access', 'Double or twin beds', 'Air conditioning', 'Private bathroom', 'Access to Al Jisr resort', 'F&B available on site'],
   },
   {
-    id: 'penthouse',
-    name: 'Penthouse',
-    price: '$199',
-    tagline: 'Top floor. Panoramic sea and mountain views. The whole coast is yours.',
-    description: 'Top floor. Panoramic sea and mountain views. Spacious living area. Private terrace. King bed. Air conditioning. Private bathroom. WiFi. Daily housekeeping.',
-    note: 'The highest point. The widest view.',
-    image: '/images/penthouse.jpg',
-    features: ['Panoramic sea & mountain views', 'Private terrace', 'Spacious living area', 'King bed', 'Air conditioning', 'Private bathroom'],
+    id: 'suite',
+    name: 'Suite',
+    price: '$140',
+    tagline: 'More space to breathe. Sea view, king bed, room to spread out.',
+    description: 'Sea view. King bed. Private balcony. Air conditioning. Private bathroom. WiFi. Daily housekeeping. Pool access. Access to Al Jisr resort. F&B available on site.',
+    note: 'A little more room. The same view.',
+    image: '/images/suite.jpg',
+    features: ['Sea view', 'King bed', 'Private balcony', 'Air conditioning', 'Private bathroom', 'Pool access', 'Access to Al Jisr resort', 'F&B available on site'],
+  },
+  {
+    id: 'villa',
+    name: 'Villa',
+    price: '$200',
+    tagline: 'Your own villa. Kitchenette, living area, and the pool just outside.',
+    description: 'Kitchenette and living area. Sea view. Private balcony. King bed. Air conditioning. Private bathroom. WiFi. Daily housekeeping. Pool access. Access to Al Jisr resort. F&B available on site.',
+    note: 'Space to live, not just stay.',
+    image: '/images/villa.jpg',
+    features: ['Kitchenette and living area', 'Sea view', 'Private balcony', 'King bed', 'Air conditioning', 'Private bathroom', 'Pool access', 'Access to Al Jisr resort', 'F&B available on site'],
   },
 ]
 
@@ -42,7 +51,7 @@ export default function Rooms() {
     <>
       <Head>
         <title>Your Room — Marimba Hotel</title>
-        <meta name="description" content="Choose your room at Marimba Hotel, Damour. Standard rooms, garden terrace access, and penthouse — all with sea views on the Lebanese coast." />
+        <meta name="description" content="Choose your room at Marimba Hotel, Damour. Standard rooms, terrace access, suites, and villas — all with sea views and resort access on the Lebanese coast." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 

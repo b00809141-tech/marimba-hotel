@@ -4,9 +4,10 @@ import { useRouter } from 'next/router'
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
 const rooms = [
-  { id: 'standard', name: 'Standard Room', price: 100, description: 'Sea view · Double or twin beds · Private balcony' },
-  { id: 'terrace', name: 'Room with Terrace Access', price: 149, description: 'Private garden terrace · Direct pool access · Double or twin beds' },
-  { id: 'penthouse', name: 'Penthouse', price: 199, description: 'Panoramic views · Private terrace · King bed' },
+  { id: 'standard', name: 'Standard Room', price: 100, description: 'Sea view · Private balcony · Double or twin beds · Pool access · Access to Al Jisr resort · F&B available on site' },
+  { id: 'terrace', name: 'Room with Terrace Access', price: 120, description: 'Private terrace · Double or twin beds · Pool access · Access to Al Jisr resort · F&B available on site' },
+  { id: 'suite', name: 'Suite', price: 140, description: 'Sea view · Private balcony · King bed · Pool access · Access to Al Jisr resort · F&B available on site' },
+  { id: 'villa', name: 'Villa', price: 200, description: 'Kitchenette and living area · Sea view · Private balcony · King bed · Pool access · Access to Al Jisr resort · F&B available on site' },
 ]
 export default function Booking() {
   const router = useRouter()
@@ -33,7 +34,7 @@ export default function Booking() {
     if (form.phone) lines.push(`Phone: ${form.phone}`)
     if (form.requests) lines.push(`Special requests: ${form.requests}`)
     const message = encodeURIComponent(lines.join('\n'))
-    window.open(`https://wa.me/96170417651?text=${message}`, '_blank')
+    window.open(`https://wa.me/96176417651?text=${message}`, '_blank')
   }
   const inp = { width: '100%', padding: '13px 14px', background: '#F4F7FC', border: '1px solid #C5D4E8', fontFamily: 'Georgia, serif', fontSize: '16px', fontStyle: 'italic', color: '#0A1F3D', outline: 'none', marginTop: '8px' }
   const lbl = { fontFamily: 'sans-serif', fontSize: '10px', letterSpacing: '0.14em', textTransform: 'uppercase', color: '#1A1A1A', display: 'block' }
