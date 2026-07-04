@@ -65,12 +65,17 @@ export default function Rooms() {
         padding: '0 48px 56px',
         overflow: 'hidden',
       }}>
+        <video autoPlay muted loop playsInline poster="/images/rooms-hero.jpg" style={{
+          position: 'absolute', inset: 0,
+          width: '100%', height: '100%',
+          objectFit: 'cover',
+          backgroundColor: '#8A8078',
+        }}>
+          <source src="/videos/rooms-hero.mp4" type="video/mp4" />
+        </video>
         <div style={{
           position: 'absolute', inset: 0,
-          backgroundImage: 'url(/images/rooms-hero.jpg)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundColor: '#8A8078',
+          background: 'linear-gradient(to top, rgba(20,8,0,0.65), rgba(20,8,0,0.15))',
         }}/>
         <div style={{ position: 'relative', maxWidth: '1300px', margin: '0 auto', width: '100%' }}>
           <p style={{ fontFamily: "'Jost', sans-serif", fontSize: '11px', letterSpacing: '0.16em', textTransform: 'uppercase', color: '#C8882A', marginBottom: '12px' }}>Marimba Hotel</p>
