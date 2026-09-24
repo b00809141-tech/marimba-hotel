@@ -8,7 +8,7 @@ const rooms = [
   {
     id: 'standard',
     name: 'Standard Room',
-    price: 100,
+    price: 75,
     maxGuests: 3,
     image: '/images/standard-room.jpg',
     description: 'King bed · Sea view · Private balcony · Daily housekeeping · Pool access · Access to Al Jisr Resort · F&B on site',
@@ -17,7 +17,7 @@ const rooms = [
   {
     id: 'terrace',
     name: 'Room with Terrace Access',
-    price: 120,
+    price: 85,
     maxGuests: 3,
     image: '/images/terrace-room.jpg',
     description: 'Poolside · King bed · Sea view · Private terrace · Daily housekeeping · Pool access · Access to Al Jisr Resort · F&B on site',
@@ -26,7 +26,7 @@ const rooms = [
   {
     id: 'suite',
     name: 'Suite',
-    price: 140,
+    price: 100,
     maxGuests: 5,
     image: '/images/suite.jpg',
     description: 'King bed · Sea view · Private balcony · Larger living area · Daily housekeeping · Pool access · Access to Al Jisr Resort · F&B on site',
@@ -35,7 +35,7 @@ const rooms = [
   {
     id: 'villa',
     name: 'Villa',
-    price: 200,
+    price: 150,
     maxGuests: 6,
     image: '/images/villa.jpg',
     description: 'Top floor · Panoramic sea & mountain views · Private terrace · Spacious living area · King bed · Air conditioning · Private bathroom',
