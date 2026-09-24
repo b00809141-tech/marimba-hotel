@@ -7,7 +7,7 @@ const rooms = [
   {
     id: 'standard',
     name: 'Standard Room',
-    price: '$100',
+    price: '$75',
     tagline: 'The sea through the window. White walls. A bed that knows what it\'s for.',
     note: 'Rest here. Live out there.',
     image: '/images/standard-room.jpg',
@@ -16,7 +16,7 @@ const rooms = [
   {
     id: 'terrace',
     name: 'Room with Terrace Access',
-    price: '$120',
+    price: '$85',
     tagline: 'Your own corner of the backyard. Private garden terrace, direct pool access.',
     note: 'The pool is steps away. The garden is yours.',
     image: '/images/terrace-room.jpg',
@@ -26,7 +26,7 @@ const rooms = [
   {
     id: 'suite',
     name: 'Suite',
-    price: '$140',
+    price: '$100',
     tagline: 'More space to breathe. Sea view, king bed, room to spread out.',
     note: 'A little more room. The same view.',
     image: '/images/suite.jpg',
@@ -35,7 +35,7 @@ const rooms = [
   {
     id: 'villa',
     name: 'Villa',
-    price: '$200',
+    price: '$150',
     tagline: 'Top floor. Panoramic sea and mountain views. The whole coast is yours.',
     note: 'The highest point. The widest view.',
     image: '/images/villa.jpg',
